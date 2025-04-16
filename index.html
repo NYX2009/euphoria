@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
     <header class="navbar">
         <div class="logo"><img src="assets/logo.svg" alt="Euphoria Logo" /></div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
         <nav>
             <ul>
                 <li><a href="#">Shop</a></li>
@@ -29,7 +29,6 @@
             <button><img src="assets/cart.svg" alt="cart" /></button>
         </div>
     </header>
-
     <section class="hero">
         <div class="hero-overlay">
             <div class="hero-content">
@@ -42,7 +41,6 @@
             <div class="nav-arrow right">&#10095;</div>
         </div>
     </section>
-
     <section class="promo-section">
         <div class="promo-card yellow">
             <div class="promo-overlay">
@@ -54,7 +52,6 @@
                 </div>
             </div>
         </div>
-
         <div class="promo-card purple">
             <div class="promo-overlay">
                 <div class="promo-text">
@@ -66,12 +63,10 @@
             </div>
         </div>
     </section>
-
     <section class="new-arrival-section">
         <h2 class="section-title">New Arrival</h2>
         <div class="arrival-carousel">
             <button class="arrow left">&#10094;</button>
-
             <div class="arrival-items">
                 <div class="arrival-card">
                     <img src="assets/img-1.jpg" alt="Knitted Joggers" />
@@ -90,25 +85,19 @@
                     <p>Urban Shirts</p>
                 </div>
             </div>
-
             <button class="arrow right">&#10095;</button>
         </div>
     </section>
-
     <section class="callout-banner">
         <div class="callout-text">
             <h2>WE MADE YOUR EVERYDAY <br /> FASHION BETTER!</h2>
-            <p>
-                In our journey to improve everyday fashion, euphoria presents EVERYDAY wear range - <br />
-                Comfortable & Affordable fashion 24/7
-            </p>
+            <p>In our journey to improve everyday fashion, euphoria presents EVERYDAY wear range - <br /> Comfortable & Affordable fashion 24/7</p>
             <button class="shop-btn">Shop Now</button>
         </div>
         <div class="callout-image">
             <img src="assets/bg-5.jpg" alt="Group fashion banner" />
         </div>
     </section>
-
     <section class="categories">
         <div class="section-header">
             <span class="dot"></span>
@@ -157,7 +146,6 @@
             </div>
         </div>
     </section>
-
     <section class="categories">
         <div class="section-header">
             <span class="dot female"></span>
@@ -186,7 +174,70 @@
             </div>
         </div>
     </section>
-
+    <section class="top-brands-deal">
+        <div class="deal-content">
+            <h2>Top Brands Deal</h2>
+            <p>Up To <span class="highlight-discount">60%</span> off on brands</p>
+            <div class="brand-logos">
+                <img src="assets/nike.jpg" alt="Nike Logo">
+                <img src="assets/H&M.jpg" alt="H&M Logo">
+                <img src="assets/levis.jpg" alt="Levi's Logo">
+                <img src="assets/USPA.jpg" alt="U.S. Polo Assn. Logo">
+                <img src="assets/puma.jpg" alt="Puma Logo">
+            </div>
+        </div>
+    </section>
+    <section class="in-the-limelight">
+        <div class="limelight-bar">
+            <h2>In The Limelight</h2>
+        </div>
+        <div class="product-grid">
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="assets/img-16.jpg" alt="Black Sweatshirt">
+                    <div class="heart-icon"></div>
+                </div>
+                <div class="product-details">
+                    <h3>Black Sweatshirt with...</h3>
+                    <p>Jhansi's Brand</p>
+                    <p>$123.00</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="assets/img-17.jpg" alt="Line Pattern Black H...">
+                    <div class="heart-icon"></div>
+                </div>
+                <div class="product-details">
+                    <h3>Line Pattern Black H...</h3>
+                    <p>AS's Brand</p>
+                    <p>$37.00</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="assets/img-18.jpg" alt="Black Shorts">
+                    <div class="heart-icon"></div>
+                </div>
+                <div class="product-details">
+                    <h3>Black Shorts</h3>
+                    <p>MM's Brand</p>
+                    <p>$37.00</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="assets/img-19.jpg" alt="Lavender Hoodie">
+                    <div class="heart-icon"></div>
+                </div>
+                <div class="product-details">
+                    <h3>Lavender Hoodie with...</h3>
+                    <p>Nike's Brand</p>
+                    <p>$119.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="feedback-section">
         <div class="section-header">
             <span class="dot female"></span>
@@ -219,7 +270,6 @@
             </div>
         </div>
     </div>
-
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
@@ -278,6 +328,11 @@
             Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.
         </div>
     </footer>
-
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('show-menu');
+        }
+    </script>
 </body>
 </html>
